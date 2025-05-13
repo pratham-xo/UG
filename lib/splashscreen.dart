@@ -3,7 +3,9 @@ import 'dart:async';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
-import 'package:private_project/intropage_1.dart';
+import 'package:private_project/onboarding_page.dart';
+
+import 'package:private_project/pages/intro_1.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -18,7 +20,7 @@ class _SplashScreenState extends State<SplashScreen> {
     Timer(Duration(seconds: 2), () {
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => Intro_1()),
+        MaterialPageRoute(builder: (context) => Onboarding()),
       );
     });
     // TODO: implement initState
